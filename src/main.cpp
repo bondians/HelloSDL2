@@ -1,7 +1,12 @@
 #include <iostream>
 
-#include <SDL.h>
-#include <SDL_image.h>
+#ifdef USING_OSX_FRAMEWORKS
+#   include <SDL2/SDL.h>
+#   include <SDL2_image/SDL_image.h>
+#else
+#   include <SDL.h>
+#   include <SDL_image.h>
+#endif
 
 int main(int argc, const char **argv)
 {
