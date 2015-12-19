@@ -1,10 +1,9 @@
 language: c++
 compiler: clang
 
-addons:
-    apt:
-        packages:
-            - libsdl2-dev
-            - libsdl2-image-dev
+sudo: required
+before-install:
+    - sudo apt-get update -qq
+    - sudo apt-get install -qq libsdl2-dev libsdl2-image-dev
 
 script: make
