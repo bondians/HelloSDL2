@@ -1,4 +1,4 @@
-Hello SDL2
+Hello SDL2 [![Build Status](https://travis-ci.org/bondians/HelloSDL2.svg)](https://travis-ci.org/bondians/HelloSDL2)
 ===========
 
 Currently should build on Mac OS or Linux.
